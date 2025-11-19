@@ -118,6 +118,46 @@ function App() {
           </ol>
         </section>
 
+        {/* FAQ */}
+        <section id="faq" className="mt-18 scroll-mt-24">
+          <div className="mb-6 text-center md:text-left">
+            <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">Frequently asked questions</h2>
+            <p className="mt-2 max-w-2xl text-sm text-slate-600 md:text-base md:mx-0 mx-auto">
+              Answers to some of the things parents usually ask about Tutor4Kids.
+            </p>
+          </div>
+          <div className="grid gap-4 text-sm text-slate-700 md:grid-cols-2">
+            <div className="rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm">
+              <p className="font-semibold text-slate-900">What ages do you teach?</p>
+              <p className="mt-1 text-xs text-slate-600">
+                Tutor4Kids is designed for children roughly ages 6–14 (primary and early secondary).
+                If you’re unsure, send us a message and well let you know if its a good fit.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm">
+              <p className="font-semibold text-slate-900">How long is each session?</p>
+              <p className="mt-1 text-xs text-slate-600">
+                A standard lesson is about 40 minutes. For younger kids we sometimes use shorter blocks
+                with small breaks to keep focus high.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm">
+              <p className="font-semibold text-slate-900">Do you give homework?</p>
+              <p className="mt-1 text-xs text-slate-600">
+                We can provide short, simple practice tasks after sessions. Theyre always optional
+                and designed to take no more than 10–15 minutes.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm">
+              <p className="font-semibold text-slate-900">Can I pause or change my plan?</p>
+              <p className="mt-1 text-xs text-slate-600">
+                Yes. You can pause for holidays or adjust how many weekly sessions you book with
+                a quick message to our team.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Pricing */}
         <section id="pricing" className="mt-20 scroll-mt-24 border-t border-slate-200/70 pt-10">
           <div className="mb-6 text-center md:text-left">
