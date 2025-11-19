@@ -1,7 +1,16 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function AuthForm() {
   const [mode, setMode] = useState('login')
+  const navigate = useNavigate()
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    // Here you would normally call your auth API.
+    // For now we just redirect to the dashboard page.
+    navigate('/dashboard')
+  }
 
   return (
     <div className="mx-auto max-w-md rounded-2xl border border-sky-100 bg-white/95 p-5 text-left shadow-sm">
@@ -23,7 +32,7 @@ function AuthForm() {
         </div>
       </div>
 
-      <form className="space-y-3 text-sm">
+      <form className="space-y-3 text-sm" onSubmit={handleSubmit}>
         {mode === 'signup' ? (
           <div>
             <label className="mb-1 block text-xs font-semibold text-slate-700">Parent or guardian name</label>
@@ -75,7 +84,7 @@ function AuthForm() {
           </p>
         )}
         <button
-          type="button"
+          type="submit"
           className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-violet-500 via-sky-500 to-emerald-400 px-6 py-2.5 text-sm font-semibold text-white shadow-md hover:brightness-110 transition-all"
         >
           {mode === 'login' ? 'Log in' : 'Create account'}
