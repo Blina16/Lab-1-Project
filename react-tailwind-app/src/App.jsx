@@ -2,10 +2,13 @@ import Navbar from './Navbar'
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-sky-50 via-rose-50 to-amber-50 text-slate-900">
+    <div className="min-h-screen bg-white text-slate-900 relative overflow-hidden">
+      {/* Doodle-style wallpaper background */}
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_1px_1px,#0f172a_0.7px,transparent_0)] bg-[length:26px_26px] opacity-5" />
+
       <Navbar />
 
-      <main className="mx-auto max-w-6xl px-4 pb-24 pt-12 md:pt-16">
+      <main className="mx-auto max-w-6xl px-4 pb-24 pt-12 md:pt-16 relative z-0">
         {/* Hero */}
         <section className="text-center">
           <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-sky-600 shadow-sm">
