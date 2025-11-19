@@ -5,48 +5,238 @@ function App() {
     <div className="min-h-screen bg-gradient-to-b from-sky-50 via-rose-50 to-amber-50 text-slate-900">
       <Navbar />
 
-      <main className="mx-auto flex max-w-6xl flex-col items-center px-4 pb-16 pt-10 text-center md:pt-16">
-        <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-sky-600 shadow-sm">
-          <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
-          Fun tutoring for kids 6–14
-        </p>
-        <h1 className="mb-4 max-w-3xl text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl">
-          Colorful lessons. Confident kids.
-        </h1>
-        <p className="mb-8 max-w-2xl text-sm text-slate-700 md:text-base">
-          Tutor4Kids connects your child with friendly, expert tutors for maths, reading,
-          science and more — in short, focused sessions that feel like play.
-        </p>
+      <main className="mx-auto max-w-6xl px-4 pb-20 pt-10 md:pt-16">
+        {/* Hero */}
+        <section className="text-center">
+          <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-sky-600 shadow-sm">
+            <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
+            Fun tutoring for kids 6–14
+          </p>
+          <h1 className="mb-4 max-w-3xl mx-auto text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl">
+            Colorful lessons. Confident kids.
+          </h1>
+          <p className="mb-8 max-w-2xl mx-auto text-sm text-slate-700 md:text-base">
+            Tutor4Kids connects your child with friendly, expert tutors for maths, reading,
+            science and more — in short, focused sessions that feel like play.
+          </p>
 
-        <div className="mb-10 flex flex-wrap justify-center gap-3">
-          <a
-            href="#contact"
-            className="inline-flex items-center rounded-full bg-gradient-to-r from-violet-500 via-sky-500 to-emerald-400 px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-sky-300/40 hover:brightness-110 transition-all"
-          >
-            Book a free trial
-          </a>
-          <a
-            href="#subjects"
-            className="inline-flex items-center rounded-full border border-sky-200 bg-white/80 px-6 py-2.5 text-sm font-semibold text-sky-700 hover:bg-sky-50 transition-colors"
-          >
-            View subjects
-          </a>
-        </div>
+          <div className="mb-12 flex flex-wrap justify-center gap-3">
+            <a
+              href="#contact"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-violet-500 via-sky-500 to-emerald-400 px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-sky-300/40 hover:brightness-110 transition-all"
+            >
+              Book a free trial
+            </a>
+            <a
+              href="#subjects"
+              className="inline-flex items-center rounded-full border border-sky-200 bg-white/80 px-6 py-2.5 text-sm font-semibold text-sky-700 hover:bg-sky-50 transition-colors"
+            >
+              View subjects
+            </a>
+          </div>
 
-        <div className="grid w-full gap-4 text-left text-xs text-slate-700 sm:grid-cols-3 md:text-sm">
-          <div className="rounded-2xl border border-sky-100 bg-white/80 p-4 shadow-sm">
-            <p className="font-semibold text-sky-800">Kid-friendly tutors</p>
-            <p className="mt-1 text-slate-600">Patient, encouraging tutors who know how to keep kids engaged.</p>
+          <div className="grid w-full gap-4 text-left text-xs text-slate-700 sm:grid-cols-3 md:text-sm">
+            <div className="rounded-2xl border border-sky-100 bg-white/80 p-4 shadow-sm">
+              <p className="font-semibold text-sky-800">Kid-friendly tutors</p>
+              <p className="mt-1 text-slate-600">Patient, encouraging tutors who know how to keep kids engaged.</p>
+            </div>
+            <div className="rounded-2xl border border-rose-100 bg-white/80 p-4 shadow-sm">
+              <p className="font-semibold text-rose-700">Short, fun sessions</p>
+              <p className="mt-1 text-slate-600">25–40 minute sessions with games, colors and break times built in.</p>
+            </div>
+            <div className="rounded-2xl border border-amber-100 bg-white/80 p-4 shadow-sm">
+              <p className="font-semibold text-amber-700">Easy progress updates</p>
+              <p className="mt-1 text-slate-600">Simple reports after each lesson so parents always know what’s next.</p>
+            </div>
           </div>
-          <div className="rounded-2xl border border-rose-100 bg-white/80 p-4 shadow-sm">
-            <p className="font-semibold text-rose-700">Short, fun sessions</p>
-            <p className="mt-1 text-slate-600">25–40 minute sessions with games, colors and break times built in.</p>
+        </section>
+
+        {/* Subjects */}
+        <section id="subjects" className="mt-16 scroll-mt-24">
+          <div className="mb-6 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">Subjects we cover</h2>
+            <p className="mt-2 text-sm text-slate-600 md:text-base">
+              Build strong foundations in core school subjects with lessons designed for kids.
+            </p>
           </div>
-          <div className="rounded-2xl border border-amber-100 bg-white/80 p-4 shadow-sm">
-            <p className="font-semibold text-amber-700">Easy progress updates</p>
-            <p className="mt-1 text-slate-600">Simple reports after each lesson so parents always know what’s next.</p>
+          <div className="grid gap-4 text-sm sm:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-2xl border border-sky-100 bg-white/90 p-4 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-wide text-sky-600">Maths</p>
+              <p className="mt-1 font-semibold text-slate-900">From basics to problem solving</p>
+              <p className="mt-2 text-xs text-slate-600">Numbers, fractions, times tables and word problems made visual and fun.</p>
+            </div>
+            <div className="rounded-2xl border border-rose-100 bg-white/90 p-4 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-wide text-rose-600">Reading & Writing</p>
+              <p className="mt-1 font-semibold text-slate-900">Confident readers and storytellers</p>
+              <p className="mt-2 text-xs text-slate-600">Phonics, comprehension and writing skills for stories, reports and exams.</p>
+            </div>
+            <div className="rounded-2xl border border-emerald-100 bg-white/90 p-4 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">Science</p>
+              <p className="mt-1 font-semibold text-slate-900">Curious kids, big ideas</p>
+              <p className="mt-2 text-xs text-slate-600">Experiments, diagrams and real-world examples in biology, physics and chemistry.</p>
+            </div>
+            <div className="rounded-2xl border border-amber-100 bg-white/90 p-4 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-wide text-amber-600">Languages</p>
+              <p className="mt-1 font-semibold text-slate-900">English + other languages</p>
+              <p className="mt-2 text-xs text-slate-600">Vocabulary, speaking and listening practice through games and conversations.</p>
+            </div>
           </div>
-        </div>
+        </section>
+
+        {/* How it works */}
+        <section id="how-it-works" className="mt-20 scroll-mt-24">
+          <div className="mb-6 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">How Tutor4Kids works</h2>
+            <p className="mt-2 text-sm text-slate-600 md:text-base">
+              Simple steps from first hello to happy homework time.
+            </p>
+          </div>
+          <ol className="grid gap-4 text-sm text-slate-700 md:grid-cols-4">
+            <li className="flex flex-col items-start rounded-2xl border border-sky-100 bg-white/90 p-4 shadow-sm">
+              <span className="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-sky-500 text-xs font-bold text-white">1</span>
+              <p className="font-semibold text-slate-900">Tell us about your child</p>
+              <p className="mt-1 text-xs text-slate-600">Share age, subjects and goals in our quick form.</p>
+            </li>
+            <li className="flex flex-col items-start rounded-2xl border border-emerald-100 bg-white/90 p-4 shadow-sm">
+              <span className="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500 text-xs font-bold text-white">2</span>
+              <p className="font-semibold text-slate-900">Match with a tutor</p>
+              <p className="mt-1 text-xs text-slate-600">We pair you with a friendly tutor who fits your child’s style.</p>
+            </li>
+            <li className="flex flex-col items-start rounded-2xl border border-rose-100 bg-white/90 p-4 shadow-sm">
+              <span className="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-rose-500 text-xs font-bold text-white">3</span>
+              <p className="font-semibold text-slate-900">Join your first lesson</p>
+              <p className="mt-1 text-xs text-slate-600">Log in from home for an interactive, colorful online session.</p>
+            </li>
+            <li className="flex flex-col items-start rounded-2xl border border-amber-100 bg-white/90 p-4 shadow-sm">
+              <span className="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-amber-500 text-xs font-bold text-white">4</span>
+              <p className="font-semibold text-slate-900">Track progress</p>
+              <p className="mt-1 text-xs text-slate-600">Receive friendly updates and adjust the plan as your child grows.</p>
+            </li>
+          </ol>
+        </section>
+
+        {/* Pricing */}
+        <section id="pricing" className="mt-20 scroll-mt-24">
+          <div className="mb-6 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">Simple plans for busy families</h2>
+            <p className="mt-2 text-sm text-slate-600 md:text-base">
+              Pick the number of weekly sessions that fits your child.
+            </p>
+          </div>
+          <div className="grid gap-4 md:grid-cols-3">
+            <div className="flex flex-col rounded-2xl border border-sky-100 bg-white/90 p-5 text-sm shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-wide text-sky-600">Starter</p>
+              <p className="mt-2 text-2xl font-bold text-slate-900">1× week</p>
+              <p className="mt-2 text-xs text-slate-600">Perfect to boost confidence in a single subject.</p>
+              <ul className="mt-4 space-y-1 text-xs text-slate-700">
+                <li>• 1 × 40 min live session</li>
+                <li>• Session summary for parents</li>
+                <li>• Flexible rescheduling</li>
+              </ul>
+            </div>
+            <div className="flex flex-col rounded-2xl border border-violet-200 bg-gradient-to-b from-violet-50 to-white p-5 text-sm shadow-md">
+              <p className="inline-flex w-fit rounded-full bg-violet-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-violet-700">Most popular</p>
+              <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-violet-600">Standard</p>
+              <p className="mt-2 text-2xl font-bold text-slate-900">2× week</p>
+              <p className="mt-2 text-xs text-slate-600">Great for steady progress across one or two subjects.</p>
+              <ul className="mt-4 space-y-1 text-xs text-slate-700">
+                <li>• 2 × 40 min live sessions</li>
+                <li>• Simple practice tasks between lessons</li>
+                <li>• Monthly progress check-in</li>
+              </ul>
+            </div>
+            <div className="flex flex-col rounded-2xl border border-emerald-100 bg-white/90 p-5 text-sm shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">Premium</p>
+              <p className="mt-2 text-2xl font-bold text-slate-900">3× week</p>
+              <p className="mt-2 text-xs text-slate-600">Ideal for exam prep or extra support in multiple subjects.</p>
+              <ul className="mt-4 space-y-1 text-xs text-slate-700">
+                <li>• 3 × 40 min live sessions</li>
+                <li>• Custom study plan</li>
+                <li>• Priority scheduling</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact / booking form */}
+        <section id="contact" className="mt-20 scroll-mt-24">
+          <div className="mb-6 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">Book a free intro call</h2>
+            <p className="mt-2 text-sm text-slate-600 md:text-base">
+              Tell us a little about your child and well suggest the right plan and tutor.
+            </p>
+          </div>
+          <div className="mx-auto max-w-xl rounded-2xl border border-sky-100 bg-white/90 p-5 text-left shadow-sm">
+            <form className="space-y-4 text-sm">
+              <div>
+                <label className="mb-1 block text-xs font-semibold text-slate-700">Parent or guardian name</label>
+                <input
+                  type="text"
+                  className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none ring-sky-200 placeholder:text-slate-400 focus:border-sky-400 focus:ring-2"
+                  placeholder="Jane Doe"
+                />
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label className="mb-1 block text-xs font-semibold text-slate-700">Childs name</label>
+                  <input
+                    type="text"
+                    className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none ring-sky-200 placeholder:text-slate-400 focus:border-sky-400 focus:ring-2"
+                    placeholder="Alex"
+                  />
+                </div>
+                <div>
+                  <label className="mb-1 block text-xs font-semibold text-slate-700">Childs age</label>
+                  <input
+                    type="number"
+                    min="4"
+                    max="18"
+                    className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none ring-sky-200 placeholder:text-slate-400 focus:border-sky-400 focus:ring-2"
+                    placeholder="10"
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="mb-1 block text-xs font-semibold text-slate-700">Main subject(s)</label>
+                <select
+                  className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none ring-sky-200 focus:border-sky-400 focus:ring-2"
+                  defaultValue=""
+                >
+                  <option value="" disabled>
+                    Choose a subject
+                  </option>
+                  <option>Maths</option>
+                  <option>Reading & Writing</option>
+                  <option>Science</option>
+                  <option>Languages</option>
+                  <option>More than one</option>
+                </select>
+              </div>
+              <div>
+                <label className="mb-1 block text-xs font-semibold text-slate-700">Preferred days / times</label>
+                <input
+                  type="text"
+                  className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none ring-sky-200 placeholder:text-slate-400 focus:border-sky-400 focus:ring-2"
+                  placeholder="e.g. Mondays and Wednesdays after 5pm"
+                />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs font-semibold text-slate-700">Anything we should know?</label>
+                <textarea
+                  rows={3}
+                  className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none ring-sky-200 placeholder:text-slate-400 focus:border-sky-400 focus:ring-2"
+                  placeholder="Goals, challenges or learning preferences."
+                />
+              </div>
+              <button
+                type="button"
+                className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-violet-500 via-sky-500 to-emerald-400 px-6 py-2.5 text-sm font-semibold text-white shadow-md hover:brightness-110 transition-all"
+              >
+                Request intro call
+              </button>
+            </form>
+          </div>
+        </section>
       </main>
     </div>
   )
