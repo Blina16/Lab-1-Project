@@ -1,4 +1,5 @@
 import Navbar from './Navbar'
+import AuthForm from './AuthForm'
 
 function App() {
   return (
@@ -199,6 +200,17 @@ function App() {
               </ul>
             </div>
           </div>
+        </section>
+
+        {/* Auth (login / signup) */}
+        <section id="auth" className="mt-18 scroll-mt-24">
+          <div className="mb-6 text-center md:text-left">
+            <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">Get started with Tutor4Kids</h2>
+            <p className="mt-2 max-w-2xl text-sm text-slate-600 md:text-base md:mx-0 mx-auto">
+              Create an account or log in to manage your childs sessions, track progress and update your plan.
+            </p>
+          </div>
+          <AuthForm />
         </section>
 
         {/* Contact / newsletter form */}

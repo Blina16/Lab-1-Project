@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   const [open, setOpen] = useState(false)
@@ -42,12 +43,12 @@ function Navbar() {
           <a href="#how-it-works" className="hover:text-sky-500 transition-colors">How it works</a>
           <a href="#pricing" className="hover:text-sky-500 transition-colors">Pricing</a>
           <a href="#faq" className="hover:text-sky-500 transition-colors">FAQ</a>
-          <a
-            href="#contact"
+          <Link
+            to="/auth"
             className="rounded-full bg-gradient-to-r from-violet-500 to-sky-500 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-md hover:brightness-110 transition-all"
           >
             Get started
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -66,13 +67,13 @@ function Navbar() {
             <a href="#faq" className="py-1 hover:text-sky-500 transition-colors" onClick={() => setOpen(false)}>
               FAQ
             </a>
-            <a
-              href="#contact"
+            <Link
+              to="/auth"
               className="mt-1 rounded-full bg-gradient-to-r from-violet-500 to-sky-500 px-4 py-2 text-center text-xs font-semibold uppercase tracking-wide text-white shadow-md hover:brightness-110 transition-all"
               onClick={() => setOpen(false)}
             >
               Get started
-            </a>
+            </Link>
           </div>
         </div>
       )}
