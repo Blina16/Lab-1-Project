@@ -53,9 +53,9 @@ function App() {
 
         {/* Subjects */}
         <section id="subjects" className="mt-18 scroll-mt-24">
-          <div className="mb-6 text-center">
+          <div className="mb-6 text-center md:text-left">
             <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">Subjects we cover</h2>
-            <p className="mt-2 text-sm text-slate-600 md:text-base">
+            <p className="mt-2 max-w-2xl text-sm text-slate-600 md:text-base md:mx-0 mx-auto">
               Build strong foundations in core school subjects with lessons designed for kids.
             </p>
           </div>
@@ -85,9 +85,9 @@ function App() {
 
         {/* How it works */}
         <section id="how-it-works" className="mt-20 scroll-mt-24">
-          <div className="mb-6 text-center">
+          <div className="mb-6 text-center md:text-left">
             <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">How Tutor4Kids works</h2>
-            <p className="mt-2 text-sm text-slate-600 md:text-base">
+            <p className="mt-2 max-w-2xl text-sm text-slate-600 md:text-base md:mx-0 mx-auto">
               Simple steps from first hello to happy homework time.
             </p>
           </div>
@@ -116,10 +116,10 @@ function App() {
         </section>
 
         {/* Pricing */}
-        <section id="pricing" className="mt-20 scroll-mt-24">
-          <div className="mb-6 text-center">
+        <section id="pricing" className="mt-20 scroll-mt-24 border-t border-slate-200/70 pt-10">
+          <div className="mb-6 text-center md:text-left">
             <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">Simple plans for busy families</h2>
-            <p className="mt-2 text-sm text-slate-600 md:text-base">
+            <p className="mt-2 max-w-2xl text-sm text-slate-600 md:text-base md:mx-0 mx-auto">
               Pick the number of weekly sessions that fits your child.
             </p>
           </div>
@@ -159,10 +159,10 @@ function App() {
         </section>
 
         {/* Contact / booking form */}
-        <section id="contact" className="mt-22 scroll-mt-24">
-          <div className="mb-6 text-center">
+        <section id="contact" className="mt-22 scroll-mt-24 border-t border-slate-200/70 pt-10">
+          <div className="mb-6 text-center md:text-left">
             <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">Book a free intro call</h2>
-            <p className="mt-2 text-sm text-slate-600 md:text-base">
+            <p className="mt-2 max-w-2xl text-sm text-slate-600 md:text-base md:mx-0 mx-auto">
               Tell us a little about your child and well suggest the right plan and tutor.
             </p>
           </div>
