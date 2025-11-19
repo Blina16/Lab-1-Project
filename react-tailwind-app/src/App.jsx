@@ -241,6 +241,45 @@ function App() {
           </div>
         </section>
       </main>
+
+      <footer className="border-t border-slate-200/80 bg-white/90">
+        <div className="mx-auto max-w-6xl px-4 py-5 text-xs text-slate-500">
+          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+            <div className="flex items-center gap-2">
+              <span className="inline-flex h-7 w-7 items-center justify-center rounded-xl bg-gradient-to-tr from-sky-400 via-emerald-400 to-amber-300 text-[11px] font-semibold text-white">
+                T4
+              </span>
+              <div className="flex flex-col">
+                <span className="font-semibold text-slate-700">Tutor4Kids</span>
+                <span className="text-[10px] text-slate-400">Fun, friendly learning for kids 6–14</span>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-3 md:gap-4">
+              <a href="#faq" className="hover:text-slate-700 transition-colors">
+                FAQ
+              </a>
+              <a href="#pricing" className="hover:text-slate-700 transition-colors">
+                Plans
+              </a>
+              <a href="#contact" className="hover:text-slate-700 transition-colors">
+                Contact
+              </a>
+              <span className="hidden h-3 w-px bg-slate-200 md:inline-block" />
+              <a href="#" className="hover:text-slate-700 transition-colors">
+                Instagram
+              </a>
+              <a href="#" className="hover:text-slate-700 transition-colors">
+                Facebook
+              </a>
+            </div>
+          </div>
+
+          <div className="mt-3 text-[10px] text-slate-400">
+            © {new Date().getFullYear()} Tutor4Kids. All rights reserved.
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
