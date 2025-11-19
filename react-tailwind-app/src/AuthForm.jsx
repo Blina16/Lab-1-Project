@@ -24,7 +24,7 @@ function AuthForm() {
       </div>
 
       <form className="space-y-3 text-sm">
-        {mode === 'signup' && (
+        {mode === 'signup' ? (
           <div>
             <label className="mb-1 block text-xs font-semibold text-slate-700">Parent or guardian name</label>
             <input
@@ -33,7 +33,22 @@ function AuthForm() {
               placeholder="Jane Doe"
             />
           </div>
+        ) : (
+          // Spacer to keep login / signup heights similar
+          <div className="h-0" aria-hidden="true" />
         )}
+        <div>
+          <label className="mb-1 block text-xs font-semibold text-slate-700">Who is using Tutor4Kids?</label>
+          <select
+            className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none ring-sky-200 focus:border-sky-400 focus:ring-2"
+            defaultValue="parent"
+          >
+            <option value="parent">Parent / guardian</option>
+            <option value="student">Student</option>
+            <option value="tutor">Tutor</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
         <div>
           <label className="mb-1 block text-xs font-semibold text-slate-700">Email address</label>
           <input
@@ -50,9 +65,13 @@ function AuthForm() {
             placeholder="••••••••"
           />
         </div>
-        {mode === 'signup' && (
+        {mode === 'signup' ? (
           <p className="text-[11px] text-slate-500">
             By signing up you agree to occasional emails about your childs progress and new learning resources.
+          </p>
+        ) : (
+          <p className="text-[11px] text-slate-500">
+            Use the same email you signed up with so we can find your family or tutor account.
           </p>
         )}
         <button
