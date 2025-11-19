@@ -5,7 +5,7 @@ function App() {
     <div className="min-h-screen bg-gradient-to-b from-sky-50 via-rose-50 to-amber-50 text-slate-900">
       <Navbar />
 
-      <main className="mx-auto max-w-6xl px-4 pb-18 pt-10 md:pt-14">
+      <main className="mx-auto max-w-6xl px-4 pb-24 pt-12 md:pt-16">
         {/* Hero */}
         <section className="text-center">
           <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-sky-600 shadow-sm">
@@ -52,7 +52,7 @@ function App() {
         </section>
 
         {/* Subjects */}
-        <section id="subjects" className="mt-16 scroll-mt-24">
+        <section id="subjects" className="mt-18 scroll-mt-24">
           <div className="mb-6 text-center">
             <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">Subjects we cover</h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
@@ -84,7 +84,7 @@ function App() {
         </section>
 
         {/* How it works */}
-        <section id="how-it-works" className="mt-18 scroll-mt-24">
+        <section id="how-it-works" className="mt-20 scroll-mt-24">
           <div className="mb-6 text-center">
             <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">How Tutor4Kids works</h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
@@ -116,7 +116,7 @@ function App() {
         </section>
 
         {/* Pricing */}
-        <section id="pricing" className="mt-18 scroll-mt-24">
+        <section id="pricing" className="mt-20 scroll-mt-24">
           <div className="mb-6 text-center">
             <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">Simple plans for busy families</h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
@@ -159,7 +159,7 @@ function App() {
         </section>
 
         {/* Contact / booking form */}
-        <section id="contact" className="mt-18 scroll-mt-24">
+        <section id="contact" className="mt-22 scroll-mt-24">
           <div className="mb-6 text-center">
             <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">Book a free intro call</h2>
             <p className="mt-2 text-sm text-slate-600 md:text-base">
