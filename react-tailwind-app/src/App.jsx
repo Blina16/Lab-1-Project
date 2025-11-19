@@ -11,14 +11,14 @@ function App() {
       <main className="mx-auto max-w-6xl px-4 pb-24 pt-12 md:pt-16 relative z-0">
         {/* Hero */}
         <section className="text-center">
-          <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-sky-600 shadow-sm">
+          <p className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-sky-600 shadow-sm">
             <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
             Fun tutoring for kids 6–14
           </p>
-          <h1 className="mb-4 max-w-3xl mx-auto text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl">
+          <h1 className="mb-8 mt-2 max-w-3xl mx-auto text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
             Colorful lessons. Confident kids.
           </h1>
-          <p className="mb-8 max-w-2xl mx-auto text-sm text-slate-700 md:text-base">
+          <p className="mb-12 max-w-2xl mx-auto text-sm text-slate-700 md:text-base">
             Tutor4Kids connects your child with friendly, expert tutors for maths, reading,
             science and more — in short, focused sessions that feel like play.
           </p>
@@ -161,81 +161,29 @@ function App() {
           </div>
         </section>
 
-        {/* Contact / booking form */}
+        {/* Contact / newsletter form */}
         <section id="contact" className="mt-22 scroll-mt-24 border-t border-slate-200/70 pt-10">
           <div className="mb-6 text-center md:text-left">
-            <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">Book a free intro call</h2>
+            <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">Join the Tutor4Kids newsletter</h2>
             <p className="mt-2 max-w-2xl text-sm text-slate-600 md:text-base md:mx-0 mx-auto">
-              Tell us a little about your child and well suggest the right plan and tutor.
+              Get kid-friendly study tips, free printable activities and updates about new tutoring spots.
             </p>
           </div>
           <div className="mx-auto max-w-md rounded-2xl border border-sky-100 bg-white/90 p-5 text-left shadow-sm">
             <form className="space-y-4 text-sm">
               <div>
-                <label className="mb-1 block text-xs font-semibold text-slate-700">Parent or guardian name</label>
+                <label className="mb-1 block text-xs font-semibold text-slate-700">Email address</label>
                 <input
-                  type="text"
+                  type="email"
                   className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none ring-sky-200 placeholder:text-slate-400 focus:border-sky-400 focus:ring-2"
-                  placeholder="Jane Doe"
-                />
-              </div>
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div>
-                  <label className="mb-1 block text-xs font-semibold text-slate-700">Childs name</label>
-                  <input
-                    type="text"
-                    className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none ring-sky-200 placeholder:text-slate-400 focus:border-sky-400 focus:ring-2"
-                    placeholder="Alex"
-                  />
-                </div>
-                <div>
-                  <label className="mb-1 block text-xs font-semibold text-slate-700">Childs age</label>
-                  <input
-                    type="number"
-                    min="4"
-                    max="18"
-                    className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none ring-sky-200 placeholder:text-slate-400 focus:border-sky-400 focus:ring-2"
-                    placeholder="10"
-                  />
-                </div>
-              </div>
-              <div>
-                <label className="mb-1 block text-xs font-semibold text-slate-700">Main subject(s)</label>
-                <select
-                  className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none ring-sky-200 focus:border-sky-400 focus:ring-2"
-                  defaultValue=""
-                >
-                  <option value="" disabled>
-                    Choose a subject
-                  </option>
-                  <option>Maths</option>
-                  <option>Reading & Writing</option>
-                  <option>Science</option>
-                  <option>Languages</option>
-                  <option>More than one</option>
-                </select>
-              </div>
-              <div>
-                <label className="mb-1 block text-xs font-semibold text-slate-700">Preferred days / times</label>
-                <input
-                  type="text"
-                  className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none ring-sky-200 placeholder:text-slate-400 focus:border-sky-400 focus:ring-2"
-                  placeholder="e.g. Mondays and Wednesdays after 5pm"
-                />
-              </div>
-              <div>
-                <label className="mb-1 block text-xs font-semibold text-slate-700">Anything we should know?</label>
-                <textarea
-                  rows={3}
-                  className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none ring-sky-200 placeholder:text-slate-400 focus:border-sky-400 focus:ring-2"
-                  placeholder="Goals, challenges or learning preferences."
+                  placeholder="you@example.com"
                 />
               </div>
               <button
                 type="button"
                 className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-violet-500 via-sky-500 to-emerald-400 px-6 py-2.5 text-sm font-semibold text-white shadow-md hover:brightness-110 transition-all"
               >
-                Request intro call
+                Join newsletter
               </button>
             </form>
           </div>
