@@ -43,6 +43,9 @@ function Navbar() {
           <a href="#how-it-works" className="hover:text-sky-500 transition-colors">How it works</a>
           <a href="#pricing" className="hover:text-sky-500 transition-colors">Pricing</a>
           <a href="#faq" className="hover:text-sky-500 transition-colors">FAQ</a>
+          <Link to="/dashboard" className="hover:text-sky-500 transition-colors">
+            Dashboard
+          </Link>
           <Link
             to="/auth"
             className="rounded-full bg-gradient-to-r from-violet-500 to-sky-500 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-md hover:brightness-110 transition-all"
