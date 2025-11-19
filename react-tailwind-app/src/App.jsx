@@ -28,7 +28,7 @@ function App() {
               href="#contact"
               className="inline-flex items-center rounded-full bg-gradient-to-r from-violet-500 via-sky-500 to-emerald-400 px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-sky-300/40 hover:brightness-110 transition-all"
             >
-              Book a free trial
+              Join our newsletter
             </a>
             <a
               href="#subjects"
